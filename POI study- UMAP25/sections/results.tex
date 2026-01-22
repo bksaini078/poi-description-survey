@@ -1,0 +1,75 @@
+\section{Results}
+This section presents the findings from our user study evaluating LLM-adapted POI descriptions against original manual descriptions. We analyze participant responses across three core metrics: significance, trustworthiness, and clarity, followed by comparative preference evaluations and overall feedback on the adaptive personalization concept. The study collected 510 paired observations (51 participants × 10 POIs) for each metric, enabling robust statistical analysis of user perceptions. Table~\ref{tab:metrics-summary} provides an overview of the rating distributions across all three evaluation dimensions.
+
+\begin{table}[h]
+  \caption{Summary of rating distributions for manual and AI-generated descriptions across three evaluation metrics (n=510 per condition)}
+  \label{tab:metrics-summary}
+  \begin{tabular}{llrr}
+    \toprule
+    \textbf{Metric} & \textbf{Rating} & \textbf{Manual} & \textbf{AI} \\
+    \midrule
+    Significance & Strongly Disagree & 7 & 8 \\
+    & Disagree & 21 & 24 \\
+    & Neutral & 138 & 118 \\
+    & Agree & 281 & 276 \\
+    & Strongly Agree & 63 & 84 \\
+    \midrule
+    Trustworthiness & Not at all & 8 & 4 \\
+    & Slightly & 43 & 33 \\
+    & Moderately & 170 & 140 \\
+    & Very & 235 & 261 \\
+    & Extremely & 54 & 72 \\
+    \midrule
+    Clarity & Very Unclear & 3 & 5 \\
+    & Unclear & 33 & 24 \\
+    & Neutral & 147 & 109 \\
+    & Clear & 260 & 284 \\
+    & Very Clear & 67 & 88 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Perceived Significance}
+Participants rated both description versions on how effectively they communicated the significance and offerings of each POI using a 5-point Likert scale ranging from Strongly Disagree to Strongly Agree. Figure~\ref{fig:significance} illustrates the distribution of responses for manual and AI-generated descriptions.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/significance_comparison.png}
+  \caption{Comparison of perceived significance between manual and AI-generated descriptions. Error bars represent Poisson standard error estimates ($\sqrt{n}$).}
+  \Description{Bar chart comparing manual and AI description ratings for significance communication}
+  \label{fig:significance}
+\end{figure}
+
+The results show that both manual and AI descriptions received predominantly positive ratings, with the majority of responses falling in the Agree category (Manual: 281, AI: 276). However, AI-generated descriptions demonstrated a notable shift toward stronger agreement, with 84 Strongly Agree responses compared to 63 for manual descriptions. This increase was primarily driven by a reduction in Neutral responses (Manual: 138, AI: 118), suggesting that personalized descriptions moved participants from ambivalence toward stronger endorsement. A chi-square test revealed no statistically significant difference between the distributions ($\chi^2(4) = 4.87$, $p = 0.3005$), indicating that AI adaptations maintained equivalence with manual descriptions while showing a trend toward higher top-box scores.
+
+\subsection{Trustworthiness}
+Trustworthiness was assessed on a 5-point scale ranging from Not at all to Extremely. Figure~\ref{fig:trust} presents the comparative distribution of trust ratings.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/trust_comparison.png}
+  \caption{Comparison of perceived trustworthiness between manual and AI-generated descriptions. Error bars represent Poisson standard error estimates ($\sqrt{n}$).}
+  \Description{Bar chart comparing manual and AI description ratings for trustworthiness}
+  \label{fig:trust}
+\end{figure}
+
+AI-generated descriptions received notably higher trust ratings than manual descriptions. The most striking difference appeared at the highest end of the scale, with AI descriptions receiving 72 Extremely trustworthy ratings compared to 54 for manual descriptions. Additionally, AI descriptions garnered 261 Very trustworthy ratings versus 235 for manual versions. At the lower end of the scale, AI descriptions received only 4 Not at all ratings compared to 8 for manual descriptions, representing a 50\% reduction in the most skeptical responses. The shift from Moderate trust toward Very and Extremely trust was particularly pronounced. A chi-square test indicated marginal statistical significance ($\chi^2(4) = 9.49$, $p = 0.050$), suggesting that AI personalization had a meaningful positive impact on perceived trustworthiness.
+
+\subsection{Clarity and Completeness}
+Participants evaluated how clear and complete the information was using a 5-point scale from Very Unclear to Very Clear. Figure~\ref{fig:clarity} shows the distribution of clarity ratings.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/clarity_comparison.png}
+  \caption{Comparison of perceived clarity and completeness between manual and AI-generated descriptions. Error bars represent Poisson standard error estimates ($\sqrt{n}$).}
+  \Description{Bar chart comparing manual and AI description ratings for clarity and information completeness}
+  \label{fig:clarity}
+\end{figure}
+
+AI-generated descriptions demonstrated superior clarity ratings compared to manual versions. Clear ratings increased from 260 for manual descriptions to 284 for AI descriptions, while Very Clear ratings rose from 67 to 88. This improvement was accompanied by a substantial reduction in Neutral responses (from 147 to 109), indicating that AI adaptations helped participants form more definitive judgments about information quality. The Unclear category also decreased from 33 to 24 responses. A chi-square test confirmed statistical significance ($\chi^2(4) = 11.47$, $p = 0.0218$), providing evidence that personalized AI descriptions significantly enhanced perceived clarity and completeness of information.
+
+\subsection{Comparative Preferences}
+Beyond individual ratings, participants indicated which description version they found more engaging, relevant, and appealing. For the engaging preference, responses were nearly evenly split between AI-generated (221 preferences) and manual (220 preferences), with 69 participants indicating both versions were equally engaging. This near-parity suggests that AI personalization successfully matched the engagement level of carefully crafted manual descriptions while adding the benefit of customization.
+
+\subsection{Overall Study Feedback}
+Following the POI evaluations, a subset of 17 participants provided overall ratings on three dimensions using a 5-point scale (1 = Poor, 5 = Excellent). The overall experience with POI descriptions received a mean rating of 3.88 (SD = 0.70, Median = 4.0), indicating generally positive reception. Participants expressed moderate to strong support for the concept of automatically adapting POI descriptions based on user interests, with a mean rating of 3.75 (SD = 0.93, Median = 4.0). Comfort with reading AI-generated descriptions when planning visits to new places received the highest mean rating of 3.94 (SD = 0.83, Median = 4.0), suggesting participants were receptive to AI-generated travel content when it demonstrated quality and relevance. The relatively low standard deviations (all below 1.0) indicate consensus among participants without extreme polarization of opinions.

@@ -33,6 +33,7 @@ Each participant rated both manual and AI variants for every POI, producing 510 
 | Strongly Agree     |     63 |  84 |
 
 **Interpretation:** Manual copy keeps more readers in the Neutral band, whereas AI phrasing shifts 21 additional responses into Strongly Agree with almost no penalty in lower categories.
+Chi-square test: $\chi^2(4)=4.87$, $p=0.3005$ (no statistically significant difference between rating distributions).
 
 ### Trust – "How trustworthy does this description appear?"
 | Rating     | Manual | AI |
