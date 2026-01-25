@@ -1,4 +1,3 @@
-
 @misc{meguellati_llm-generated_2025,
 	title = {{LLM}-Generated Ads: From Personalization Parity to Persuasion Superiority},
 	url = {http://arxiv.org/abs/2512.03373},
@@ -382,39 +381,6 @@
 	date = {2025-06-13},
 	file = {Full Text PDF:C\:\\Users\\bksai\\Zotero\\storage\\THYLG6XD\\Proma et al. - 2025 - Personalizing LLM Responses to Combat Political Misinformation.pdf:application/pdf},
 }
-
-@online{noauthor_papieruberprufung_nodate,
-	title = {[Papierüberprüfung] Aligning {LLM} with human travel choices: a persona-based embedding learning approach},
-	url = {https://www.themoonlight.io/de/review/aligning-llm-with-human-travel-choices-a-persona-based-embedding-learning-approach},
-	shorttitle = {[Papierüberprüfung] Aligning {LLM} with human travel choices},
-	abstract = {The paper introduces a novel framework for aligning large language models ({LLMs}) with human travel choice behavior, specifically tailored for typical travel demand data constraints. The core problem is that while {LLMs} can simulate human-like behavior, their predictions often misalign with actual human travel choices when conditioned solely on socio-demographics (\$d\$) and choice context (\$X\$), and existing alignment methods like supervised fine-tuning ({SFT}) or traditional persona-based methods are often impractical due to data or computational requirements. The proposed framework addresses this by conditioning the {LLM} with a persona (\$Z\$) that captures individual preferences and behavioral traits, alongside \$d\$ and \$X\$, via a structured prompt \$g(d, X, Z)\$. The key innovation lies in learning a probabilistic persona loading function \$P(Z\_k {\textbar} d\_i)\$ that maps socio-demographic information \$d\_i\$ from new observations to a set of base personas \$D\_k = {\textbackslash}\{Z\_k{\textbackslash}\}\_\{k=1\}{\textasciicircum}\{K\_h\}\$ inferred from a detailed observational dataset \$D\_h\$.
-
-The framework consists of two main steps: persona regularization and labeling, and loading-based prompt generation and estimation.
-
-**Step 1: Prompt Regularization and Labeling with Persona Information**
-This step focuses on structuring the {LLM} prompt and creating a library of behaviorally grounded personas. A structured prompt \$g(d, X, Z)\$ is used, comprising a static backbone and context-varied inputs (\$d\$, \$X\$, and \$Z\$). Drawing from discrete choice models ({DCMs}), the persona \$Z\$ is introduced to represent latent preferences and traits not explicitly captured by \$d\$. To obtain concrete persona labels, an expert {LLM} (\${LLM}\_e\$) is applied to the detailed observational dataset \$D\_h = {\textbackslash}\{d\_k, {\textbackslash}\{(X\_k{\textasciicircum}j, Y\_k{\textasciicircum}j){\textbackslash}\}\_\{j=1\}{\textasciicircum}\{J\_k\}{\textbackslash}\}\_\{k=1\}{\textasciicircum}\{K\_h\}\$. For each individual \$k {\textbackslash}in D\_h\$, \${LLM}\_e\$ infers their persona \$Z\_k\$ by analyzing their socio-demographics \$d\_k\$ and sequence of context-choice pairs \${\textbackslash}\{(X\_k{\textasciicircum}j, Y\_k{\textasciicircum}j){\textbackslash}\}\_\{j=1\}{\textasciicircum}\{J\_k\}\$. This yields the set \$D\_k = {\textbackslash}\{Z\_k{\textbackslash}\}\_\{k=1\}{\textasciicircum}\{K\_h\}\$, which serves as the potential personas for future loading.
-
-**Step 2: Loading-based Prompt Generation and Estimation**
-With the prompt structure defined and base personas inferred, the prompt generator \$G\_{\textbackslash}Phi\$ for new observations \$(d\_i, X\_i, Y\_i)\$ from the general observational dataset \$D\_{\textbackslash}ell = {\textbackslash}\{(d\_i, X\_i, Y\_i){\textbackslash}\}\_\{i=1\}{\textasciicircum}\{N\_{\textbackslash}ell\}\$ is defined probabilistically over the inferred personas \$D\_k\$: \$P(G\_{\textbackslash}Phi(d\_i, X\_i) = g(d\_i, X\_i, Z\_k)) = P(Z\_k{\textbar}d\_i)\$, where \$P(Z\_k{\textbar}d\_i)\$ is the persona loading function. This function is designed to capture behavioral similarity: personas \$Z\_k\$ from individuals \$k {\textbackslash}in D\_h\$ whose socio-demographics \$d\_k\$ are behaviorally similar to \$d\_i\$ are more likely to be loaded.
-
-Behavioral similarity is captured by mapping socio-demographics \$d\$ to a latent embedding space \$R{\textasciicircum}\{D\_e\}\$ via a learnable embedding function \$e(d; {\textbackslash}beta) {\textbackslash}in R{\textasciicircum}\{D\_e\}\$, where \${\textbackslash}beta\$ are the parameters. The similarity between \$d\_i\$ and \$d\_k\$ is quantified by a scalar scoring function \$s(e\_i, e\_k)\$ applied to their embeddings \$e\_i = e(d\_i; {\textbackslash}beta)\$ and \$e\_k = e(d\_k; {\textbackslash}beta)\$. The persona loading function is then defined as \$P(Z\_k{\textbar}d\_i) = p(s\_\{i,k\}, s\_\{i,-k\})\$, where \$s\_\{i,k\}\$ is the similarity between \$d\_i\$ and \$d\_k\$, and \$s\_\{i,-k\}\$ is the vector of similarities between \$d\_i\$ and all other \$d\_j\$ (\$j {\textbackslash}ne k\$) in \$D\_h\$. This formulation addresses scalability and sparsity issues compared to direct probability estimation \$P(Z\_k{\textbar}d\_i)\$.
-
-The parameters \${\textbackslash}beta\$ of the embedding function (and thus the persona loading function) are estimated by maximizing the expected log-likelihood that the {LLM}, when prompted with \$g(d\_i, X\_i, Z\_k)\$ and \$Z\_k\$ sampled according to \$P(Z\_k{\textbar}d\_i)\$, predicts the observed choice \$Y\_i\$ for observations in \$D\_{\textbackslash}ell\$. The objective function is:
-\$\$ {\textbackslash}max\_{\textbackslash}beta {\textbackslash}mathcal\{L\}({\textbackslash}beta) = {\textbackslash}sum\_\{i=1\}{\textasciicircum}\{N\_{\textbackslash}ell\} {\textbackslash}log {\textbackslash}left( {\textbackslash}sum\_\{k=1\}{\textasciicircum}\{K\_h\} P(Z\_k{\textbar}d\_i; {\textbackslash}beta) {\textbackslash}cdot {\textbackslash}mathbb\{I\}({LLM}(g(d\_i, X\_i, Z\_k)) = Y\_i) {\textbackslash}right) \$\$
-Directly evaluating this requires \$N\_{\textbackslash}ell {\textbackslash}times K\_h\$ {LLM} calls per iteration, which is computationally expensive. A Monte-Carlo Stochastic {EM} algorithm is employed to reduce {LLM} calls. In the E-step, for each observation \$i {\textbackslash}in D\_{\textbackslash}ell\$, \$L\$ personas are sampled from \$D\_k\$ according to the current \$P(Z\_k{\textbar}d\_i; {\textbackslash}beta{\textasciicircum}\{(t-1)\})\$. {LLM} calls are made only for these \$L\$ sampled personas \${\textbackslash}hat\{Y\}\_\{i,l\} = {LLM}(g(d\_i, X\_i, Z\_l))\$, and weights \$w\_\{i,l\}\$ are computed for each sampled pair \$(i, l)\$ indicating its contribution to the likelihood based on \$P(Z\_l{\textbar}d\_i; {\textbackslash}beta{\textasciicircum}\{(t-1)\})\$ and whether \${\textbackslash}hat\{Y\}\_\{i,l\} = Y\_i\$. An adjusted weight \${\textbackslash}hat\{w\}\_\{i,l\}\$ is used in the experiment to down-weight samples where all \$L\$ sampled personas lead to correct predictions. In the M-step, \${\textbackslash}beta{\textasciicircum}\{(t)\}\$ is updated by maximizing a weighted log-likelihood: \${\textbackslash}max\_{\textbackslash}beta {\textbackslash}sum\_\{i=1\}{\textasciicircum}\{N\_{\textbackslash}ell\} {\textbackslash}sum\_\{l=1\}{\textasciicircum}L {\textbackslash}hat\{w\}\_\{i,l\} {\textbackslash}log(P(Z\_l{\textbar}d\_i; {\textbackslash}beta))\$. In the experiment, a regularization term is added to the M-step objective to balance variances of embedding dimensions: \${\textbackslash}max\_{\textbackslash}beta {\textbackslash}sum\_\{i=1\}{\textasciicircum}\{N\_{\textbackslash}ell\} {\textbackslash}sum\_\{l=1\}{\textasciicircum}L {\textbackslash}hat\{w\}\_\{i,l\} {\textbackslash}log(P(Z\_l{\textbar}d\_i; {\textbackslash}beta)) + {\textbackslash}alpha\_m {\textbackslash}sum\_\{m=1\}{\textasciicircum}4 ({\textbackslash}frac\{{\textbackslash}sigma{\textasciicircum}2({\textbackslash}beta\_m)\}\{{\textbackslash}bar\{{\textbackslash}sigma\}{\textasciicircum}2\} - 1){\textasciicircum}2\$.
-
-The framework was validated on the Swissmetro dataset using {GPT}-4o. \$D\_h\$ comprised 250 respondents (2250 records), \$D\_{\textbackslash}ell\$ 200 records, and \$D\_t\$ 400 records, all filtered to 3 modes. Personas inferred rates (1-10) for travel time, cost, flexibility, habit, comfort, trip purpose. The embedding function used a linear kernel \$e\_i = ({\textbackslash}beta\_1 {\textbackslash}cdot {\textbackslash}text\{{GENDER}\}\_i, {\textbackslash}beta\_2 {\textbackslash}cdot {\textbackslash}text\{{AGE}\}\_i, {\textbackslash}beta\_3 {\textbackslash}cdot {\textbackslash}text\{{INCOME}\}\_i, {\textbackslash}beta\_4 {\textbackslash}cdot {\textbackslash}text\{{GROUP}\}\_i)\$ with \$D\_e=4\$, cosine similarity \$s\_\{i,k\} = {\textbackslash}frac\{e\_i{\textasciicircum}T e\_k\}\{{\textbar}{\textbar}e\_i{\textbar}{\textbar}\_2 {\textbackslash}cdot {\textbar}{\textbar}e\_k{\textbar}{\textbar}\_2\}\$, and weighted softmax \$P(Z\_k{\textbar}d\_i) = {\textbackslash}frac\{e{\textasciicircum}\{{\textbackslash}lambda s\_\{i,k\}\}\}\{{\textbackslash}sum\_\{j=1\}{\textasciicircum}\{K\_h\} e{\textasciicircum}\{{\textbackslash}lambda s\_\{i,j\}\}\}\$ with \${\textbackslash}lambda=40/3\$. Performance was compared against Multinomial Logit ({MNL}), Zero-shot {LLM}, Few-shot {LLM}, and Same-group persona loading. Metrics included Jensen–Shannon divergence ({JSD}) for aggregate mode shares and Macro/Weighted F1-scores for individual prediction.
-
-Results on \$D\_t\$ showed the proposed method significantly outperformed baselines. It achieved the lowest {JSD} (0.021) compared to {MNL} (0.483), Zero-shot (0.216), Few-shot (0.108), and Same-group persona (0.044). It also achieved the highest Macro F1 (0.556) and Weighted F1 (0.683), surpassing {MNL} (0.474, 0.606), Zero-shot (0.407, 0.543), Few-shot (0.429, 0.594), and Same-group persona (0.542, 0.657). Detailed mode share analysis showed the proposed method's predictions were closest to ground truth across all modes, mitigating biases seen in other {LLM} approaches (e.g., Zero-shot's strong Swissmetro preference). Confusion matrices highlighted the proposed method's balanced accuracy across all modes, particularly improving prediction for less frequent modes compared to non-persona {LLMs}.
-
-Interpretation of learned embedding parameters \${\textbackslash}beta\$ provided insights into behavioral similarities. Magnitudes indicated the distinctiveness of groups (e.g., male, age {\textgreater} 65, car user). Patterns within variables revealed distinct behavioral groupings (e.g., young/elder vs. middle-aged; lower vs. middle/high income). Clustering in the embedding space (using K-means and t-{SNE} visualization) identified six behavioral clusters, largely driven by age, past mode usage (car vs. rail user group), and gender, demonstrating that the framework can uncover latent behavioral structures linked to socio-demographics.
-
-The paper concludes that the proposed persona-based embedding learning approach effectively aligns {LLMs} with human travel behavior, yielding superior predictive performance at both aggregate and individual levels while providing interpretable behavioral insights. The method is more accessible than {SFT} and more robust than lightweight {LLM} alignment methods, paving the way for integrating {LLMs} into travel demand modeling practice. Future work could explore prompting strategies for diverse behaviors and evaluate generalizability with multi-context data.},
-	urldate = {2026-01-25},
-	langid = {german},
-	file = {Snapshot:C\:\\Users\\bksai\\Zotero\\storage\\XCQMXNF5\\aligning-llm-with-human-travel-choices-a-persona-based-embedding-learning-approach.html:text/html},
-}
-
 @misc{liu_aligning_2025,
 	title = {Aligning {LLM} with human travel choices: a persona-based embedding learning approach},
 	url = {http://arxiv.org/abs/2505.19003},
@@ -497,4 +463,27 @@ The paper concludes that the proposed persona-based embedding learning approach 
 	doi          = {10.18653/v1/2024.findings-acl.780},
 	url          = {https://aclanthology.org/2024.findings-acl.780/},
 	urldate      = {2026-01-25}
+}
+
+@article{adomavicius_toward_2005,
+  title   = {Toward the Next Generation of Recommender Systems: A Survey of the State-of-the-Art and Possible Extensions},
+  author  = {Adomavicius, Gediminas and Tuzhilin, Alexander},
+  journal = {IEEE Transactions on Knowledge and Data Engineering},
+  year    = {2005},
+  volume  = {17},
+  number  = {6},
+  pages   = {734--749},
+  doi     = {10.1109/TKDE.2005.99},
+  url     = {https://ieeexplore.ieee.org/document/1423975}
+}
+
+@inproceedings{ye_exploiting_2011,
+  title     = {Exploiting Geographical Influence for Collaborative Point-of-Interest Recommendation},
+  author    = {Ye, Mao and Yin, Peifeng and Lee, Wang-Chien and Lee, Dik Lun},
+  booktitle = {Proceedings of the 34th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '11)},
+  year      = {2011},
+  pages     = {325--334},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/2009916.2009962},
+  url       = {https://dl.acm.org/doi/10.1145/2009916.2009962}
 }

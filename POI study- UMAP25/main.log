@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.26)  25 JAN 2026 07:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.26)  25 JAN 2026 08:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -910,6 +910,10 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.0pt on input line 247.
  (sections/introduction.tex) (sections/related_work.tex
+
+Package natbib Warning: Citation `LLi2024SIGIR_LLMNextPOI' on page 1 undefined on input line 5.
+
+
 Underfull \vbox (badness 7613) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
@@ -919,7 +923,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 {C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (sections/methodology.tex
 Underfull \vbox (badness 1895) has occurred while \output is active []
 
-<figures/eval1.jpeg, id=129, 2411.0075pt x 1098.1025pt>
+<figures/eval1.jpeg, id=149, 2411.0075pt x 1098.1025pt>
 File: figures/eval1.jpeg Graphic file (type jpg)
 <use figures/eval1.jpeg>
 Package pdftex.def Info: figures/eval1.jpeg  used on input line 15.
@@ -936,40 +940,46 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/significance_comparison.png, id=148, 786.83963pt x 424.76692pt>
+<figures/significance_comparison.png, id=161, 786.83963pt x 424.76692pt>
 File: figures/significance_comparison.png Graphic file (type png)
 <use figures/significance_comparison.png>
-Package pdftex.def Info: figures/significance_comparison.png  used on input line 88.
+Package pdftex.def Info: figures/significance_comparison.png  used on input line 72.
 (pdftex.def)             Requested size: 217.03127pt x 117.15802pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/trust_comparison.png, id=151, 786.83963pt x 424.76692pt>
+<figures/trust_comparison.png, id=164, 786.83963pt x 424.76692pt>
 File: figures/trust_comparison.png Graphic file (type png)
 <use figures/trust_comparison.png>
-Package pdftex.def Info: figures/trust_comparison.png  used on input line 101.
+Package pdftex.def Info: figures/trust_comparison.png  used on input line 85.
 (pdftex.def)             Requested size: 217.03127pt x 117.15802pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3.3 <./figures/eval1.jpeg>]
-<figures/clarity_comparison.png, id=160, 786.83963pt x 424.76692pt>
+<figures/clarity_comparison.png, id=173, 786.83963pt x 424.76692pt>
 File: figures/clarity_comparison.png Graphic file (type png)
 <use figures/clarity_comparison.png>
-Package pdftex.def Info: figures/clarity_comparison.png  used on input line 114.
+Package pdftex.def Info: figures/clarity_comparison.png  used on input line 98.
 (pdftex.def)             Requested size: 217.03127pt x 117.15802pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (sections/discussion.tex [4.4 <./figures/significance_comparison.png> <./figures/trust_comparison.png> <./figures/clarity_comparison.png>]) (sections/future_work.tex) (sections/conclusion.tex) Excluding 'acks' comment. (main.bbl
-Underfull \vbox (badness 5260) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5.5])
 
+Package natbib Warning: There were undefined citations.
+
+
 Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 279.
 
-(C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
+
+Overfull \vbox (1.31601pt too high) has occurred while \output is active []
+
+ (C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
@@ -982,17 +992,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0A923CBE987D48DF9CBD1C80591E0D82;3019.
  ) 
 Here is how much of TeX's memory you used:
- 21350 strings out of 467871
- 351525 string characters out of 5418375
- 845744 words of memory out of 5000000
- 49208 multiletter control sequences out of 15000+600000
- 785361 words of font info for 392 fonts, out of 8000000 for 9000
+ 21371 strings out of 467871
+ 352089 string characters out of 5418375
+ 848288 words of memory out of 5000000
+ 49214 multiletter control sequences out of 15000+600000
+ 786812 words of font info for 401 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,17n,131p,1384b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (6 pages, 1964719 bytes).
+Output written on main.pdf (6 pages, 1968954 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  86221 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{15}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -35,6 +35,19 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Adomavicius and Tuzhilin(2005)]%
+        {adomavicius_toward_2005}
+\bibfield{author}{\bibinfo{person}{Gediminas Adomavicius} {and}
+  \bibinfo{person}{Alexander Tuzhilin}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Toward the Next Generation of Recommender Systems:
+  A Survey of the State-of-the-Art and Possible Extensions}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} \bibinfo{volume}{17}, \bibinfo{number}{6}
+  (\bibinfo{year}{2005}), \bibinfo{pages}{734--749}.
+\newblock
+\href{https://doi.org/10.1109/TKDE.2005.99}{doi:\nolinkurl{10.1109/TKDE.2005.99}}
+
 
 \bibitem[Feng et~al\mbox{.}(2023)]%
         {Feng2023LLMCRS}
@@ -95,7 +108,7 @@
 
 
 \bibitem[Li et~al\mbox{.}(2024)]%
-        {Li2024SIGIR_LLMNextPOI}
+        {li2024sigir_llmnextpoi}
 \bibfield{author}{\bibinfo{person}{Peibo Li}, \bibinfo{person}{Maarten de
   Rijke}, \bibinfo{person}{Hao Xue}, \bibinfo{person}{Shuang Ao},
   \bibinfo{person}{Yang Song}, {and} \bibinfo{person}{Flora~D. Salim}.}
@@ -107,6 +120,19 @@
   Machinery}, \bibinfo{pages}{1463--1472}.
 \newblock
 \href{https://doi.org/10.1145/3626772.3657840}{doi:\nolinkurl{10.1145/3626772.3657840}}
+
+
+\bibitem[Qi et~al\mbox{.}(2025)]%
+        {qi_rag-optimized_2025}
+\bibfield{author}{\bibinfo{person}{Jinhu Qi}, \bibinfo{person}{Shuai Yan},
+  \bibinfo{person}{Yibo Zhang}, \bibinfo{person}{Wentao Zhang},
+  \bibinfo{person}{Rong Jin}, \bibinfo{person}{Yuwei Hu}, {and}
+  \bibinfo{person}{Ke Wang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{{RAG}-Optimized Tibetan Tourism {LLMs}: Enhancing
+  Accuracy and Personalization}.
+\newblock
+\href{https://doi.org/10.48550/arXiv.2408.12003}{doi:\nolinkurl{10.48550/arXiv.2408.12003}}
+\showeprint[arxiv]{2408.12003 [cs]}
 
 
 \bibitem[Renjith et~al\mbox{.}(2020)]%
