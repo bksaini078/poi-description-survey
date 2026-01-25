@@ -1,14 +1,23 @@
 \section{Methodology}
-To evaluate the effectiveness of LLM-based personalization of POI descriptions, we conducted a controlled user study comparing original and AI-adapted descriptions. This section details the study design, POI selection, personalization approach, evaluation procedure, and participant characteristics.
+To evaluate the effectiveness of LLM-based personalization of POI descriptions, a controlled user study was conducted comparing original and AI-adapted descriptions. This section details the study design, POI selection, personalization approach, evaluation procedure, and participant characteristics.
 
 \subsection{Study Design}
-We employed a within-subjects experimental design where each participant evaluated both original and AI-personalized descriptions for multiple POIs. This design enabled direct comparison between description types while controlling for individual differences in preferences and expectations. The study presented participants with 10 POIs spanning five categories: hotels, restaurants, museums, gardens, and landmarks. Each category included two POIs to ensure diverse representation of travel-related content. POIs were selected to include both internationally recognized locations and lesser-known destinations, providing variety in familiarity levels.
+A within-subjects experimental design was employed in which each participant evaluated both original and AI-personalized descriptions for multiple POIs. This design enabled direct comparison between description types while controlling for individual differences in preferences and expectations. The study presented participants with 10 POIs spanning five categories: hotels, restaurants, museums, gardens, and landmarks. Each category included two POIs to ensure diverse representation of travel-related content. POIs were selected to include both internationally recognized locations and lesser-known destinations, providing variety in familiarity levels.
 
 \subsection{Description Personalization}
-For each POI, we prepared two description versions. The original description was sourced from official tourism websites and travel platforms, representing standard, non-personalized content. The AI-adapted version was generated using a large language model (GPT-4) that received the original description along with each participant's stated interests, hobbies, and travel preferences as input. The LLM was instructed to adapt the description to emphasize aspects most relevant to the user's profile while maintaining factual accuracy and the core information about the POI. For example, a museum description for a participant interested in history would emphasize historical significance and artifacts, while the same museum described for a family traveler would highlight interactive exhibits and educational programs.
+For each POI, two description versions were prepared. The original description was sourced from official tourism websites and travel platforms, representing standard, non-personalized content. The AI-adapted version was generated using a large language model (GPT-4) that received the original description along with each participant's stated interests, hobbies, and travel preferences as input. The LLM was instructed to adapt the description to emphasize aspects most relevant to the user's profile while maintaining factual accuracy and the core information about the POI. For example, a museum description for a participant interested in history would emphasize historical significance and artifacts, while the same museum described for a family traveler would highlight interactive exhibits and educational programs.
 
 \subsection{Evaluation Interface}
 Participants viewed descriptions through a web-based interface that displayed two versions side by side, labeled as Version A and Version B (see Figure~\ref{fig:eval-interface}). The interface did not indicate which version was AI-generated. Each POI was accompanied by a representative image to provide visual context. The presentation order of AI and manual descriptions was randomized across POIs to prevent order bias. Participants could not proceed to the next POI without completing evaluations for the current one, ensuring complete data collection.
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.80\linewidth]{figures/eval1.jpeg}
+  \caption{Evaluation interface showing two description versions (Version A and Version B) presented side by side for participant comparison}
+  \Description{Screenshot of the evaluation interface displaying two POI description versions with an image of Jungfraujoch mountain peak}
+  \label{fig:eval-interface}
+\end{figure*}
+
 
 \subsection{Evaluation Metrics}
 Participants evaluated each description on three core dimensions using Likert scales:
@@ -22,22 +31,17 @@ Participants evaluated each description on three core dimensions using Likert sc
 After rating both descriptions individually, participants completed comparative evaluations selecting which description was more engaging, more informative, more appealing, and more likely to encourage them to visit. Participants also reported their familiarity with each POI using three categories: visited in person, heard about it, or never heard of it.
 
 \subsection{Procedure}
-The study proceeded in three phases. First, participants reviewed an informed consent form explaining the study purpose, voluntary participation, and data confidentiality. After providing consent, they completed a demographic and preference survey collecting age, gender, nationality, profession, current city, hobbies, preferred travel styles, and tourism interests. This information formed the basis for personalizing AI-generated descriptions.
+The study was conducted in three phases using a secure web platform. First, participants provided informed consent and completed a survey regarding their demographics, travel styles, and interests. This data was used to personalize the AI-generated descriptions. Second, participants evaluated 10 POIs sequentially by reading both description versions and rating them on core metrics and familiarity. This evaluation phase lasted approximately 20 to 30 minutes. Finally, participants provided overall feedback on their experience and their comfort level with AI-generated travel content. All data were collected anonymously to ensure privacy and ethical compliance.
+% The study proceeded in three phases. First, participants reviewed an informed consent form explaining the study purpose, voluntary participation, and data confidentiality. After providing consent, they completed a demographic and preference survey collecting age, gender, nationality, profession, current city, hobbies, preferred travel styles, and tourism interests. This information formed the basis for personalizing AI-generated descriptions.
 
-Second, participants entered the main evaluation phase, viewing 10 POIs sequentially. For each POI, they read both description versions, rated each individually on the three core metrics, completed comparative evaluations, and indicated their familiarity with the location. The entire evaluation phase took approximately 20 to 30 minutes.
+% Second, participants entered the main evaluation phase, viewing 10 POIs sequentially. For each POI, they read both description versions, rated each individually on the three core metrics, completed comparative evaluations, and indicated their familiarity with the location. The entire evaluation phase took approximately 20 to 30 minutes.
 
-Third, upon completing all POI evaluations, participants provided overall feedback rating their experience with the study, their opinion on automated description adaptation, and their comfort level with AI-generated travel content. All responses were collected anonymously through a secure web platform, ensuring participant privacy and compliance with ethical research standards.
+% Third, upon completing all POI evaluations, participants provided overall feedback rating their experience with the study, their opinion on automated description adaptation, and their comfort level with AI-generated travel content. All responses were collected anonymously through a secure web platform, ensuring participant privacy and compliance with ethical research standards.
+
 \subsection{Participants}
-We recruited 51 participants through personal networks via email and direct messaging. Participants were required to be at least 18 years old and possess basic English proficiency to ensure effective engagement with POI descriptions. No specific travel experience was mandated, as we aimed to assess AI-generated descriptions across diverse user segments.
+A total of 51 participants were recruited through personal networks via email and direct messaging. Participants were required to be at least 18 years old and possess basic English proficiency to ensure effective engagement with POI descriptions. No specific travel experience was mandated, as the study aimed to assess AI-generated descriptions across diverse user segments.
 
 The sample demographics were as follows. Ages ranged from 22 to 49 years (M = 30.94, SD = 6.74). Gender distribution included 34 males (67\%) and 17 females (33\%). Nationalities were predominantly Indian (n = 28) and German (n = 21), with minimal Chinese and Iranian representation. Marital status comprised 25 married, 22 single, 3 in relationships, and 1 divorced. Professional backgrounds centered on students (n = 22) and engineers (n = 16), with smaller numbers of academics, healthcare professionals, and public service workers.
 
 Travel experience levels showed intermediate (n = 21) and experienced (n = 19) travelers forming the majority, with 9 beginners and 2 experts. This distribution provided a range of perspectives on travel content while maintaining concentration in engaged, technology-familiar demographics.
 
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=\linewidth]{figures/eval1.jpeg}
-  \caption{Evaluation interface showing two description versions (Version A and Version B) presented side by side for participant comparison}
-  \Description{Screenshot of the evaluation interface displaying two POI description versions with an image of Jungfraujoch mountain peak}
-  \label{fig:eval-interface}
-\end{figure*}
