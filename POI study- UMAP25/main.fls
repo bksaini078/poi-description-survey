@@ -1,6 +1,6 @@
-PWD C:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
+PWD c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
 INPUT C:\Users\bksai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25\main.tex
 OUTPUT main.log
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
