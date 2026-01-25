@@ -70,7 +70,7 @@ Final reflections were collected from 28 respondents (some items contain fewer n
 
 ## Key Implications
 1. **AI copy lifts top-box scores** across all three qualitative metrics, primarily by converting neutral readers into clear advocates.
-2. **Trust remains the tightest differentiator**, with AI passages delivering 28 more "Extremely" trustworthy judgments—critical for POI recommendations where credibility underpins adoption.
+2. **Trust remains the tightest differentiator**, with AI passages delivering 18 more "Extremely" trustworthy judgments (and +44 combined "Very/Extremely" votes)—critical for POI recommendations where credibility underpins adoption.
 3. **Participant demographics skew young, educated, and internationally diverse**, implying future validation should include older or non-student traveler segments for broader generalization.
 4. **End-user feedback validates personalization concepts**: participants are receptive to adaptive, AI-assisted storytelling so long as clarity and trust gains persist.
 

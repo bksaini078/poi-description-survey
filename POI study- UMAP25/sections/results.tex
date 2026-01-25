@@ -63,13 +63,30 @@ This section presents the findings from the user study evaluating LLM-adapted PO
 %   \end{tabular}
 % \end{table}
 
+% ===================== VERIFICATION CHECKLIST (reports ground truth) =====================
+% TODO(verify): Reconcile ALL quantitative statements + figures with artifacts in /reports.
+% Expected ground truth to provide:
+%   - reports/* table export for Table~\ref{tab:metrics-summary} (percentages, N=510)
+%   - reports/* statistical test output for each chi-square test (Significance/Trust/Clarity):
+%       * chi-square statistic, df=4, p-value, and confirmation N=510 per metric
+%   - reports/* figure source data (counts or % per level) for:
+%       figures/significance_comparison.png
+%       figures/trust_comparison.png
+%       figures/clarity_comparison.png
+% Checks to perform:
+%   1) Table rows per metric sum to ~100% (allow rounding error).
+%   2) Text matches table exactly (percentages + stated pp changes).
+%   3) Figure bars/labels match the same distributions as the table.
+%   4) Captions’ “Poisson standard error” matches how error bars were computed in reports.
+% =========================================================================================
+
 \subsection{Perceived Significance}
 Participants rated both description versions on how effectively they communicated the significance and offerings of each POI using a 5-point Likert scale ranging from Strongly Disagree to Strongly Agree. Figure~\ref{fig:significance} illustrates the distribution of responses for manual and AI-generated descriptions.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/significance_comparison.png}
-  \caption{Comparison of perceived significance between manual and AI-generated descriptions. Error bars represent Poisson standard error estimates ($\sqrt{n}$).}
+  \caption{Comparison of perceived significance between manual and AI-generated descriptions. Error bars represent Poisson-style standard error estimates computed on raw counts ($\sqrt{n}$).}
   \Description{Bar chart comparing manual and AI description ratings for significance communication}
   \label{fig:significance}
 \end{figure}
@@ -82,7 +99,7 @@ Trustworthiness was assessed on a 5-point scale ranging from Not at all to Extre
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/trust_comparison.png}
-  \caption{Comparison of perceived trustworthiness between manual and AI-generated descriptions. Error bars represent Poisson standard error estimates ($\sqrt{n}$).}
+  \caption{Comparison of perceived trustworthiness between manual and AI-generated descriptions. Error bars represent Poisson-style standard error estimates computed on raw counts ($\sqrt{n}$).}
   \Description{Bar chart comparing manual and AI description ratings for trustworthiness}
   \label{fig:trust}
 \end{figure}
@@ -95,7 +112,7 @@ Participants evaluated how clear and complete the information was using a 5-poin
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/clarity_comparison.png}
-  \caption{Comparison of perceived clarity and completeness between manual and AI-generated descriptions. Error bars represent Poisson standard error estimates ($\sqrt{n}$).}
+  \caption{Comparison of perceived clarity and completeness between manual and AI-generated descriptions. Error bars represent Poisson-style standard error estimates computed on raw counts ($\sqrt{n}$).}
   \Description{Bar chart comparing manual and AI description ratings for clarity and information completeness}
   \label{fig:clarity}
 \end{figure}
