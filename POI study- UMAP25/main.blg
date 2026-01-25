@@ -8,7 +8,6 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: PoI_GenAI.bib
-Warning--I didn't find a database entry for "LLi2024SIGIR_LLMNextPOI"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -16,14 +15,14 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Warning--empty address in hofschen_expected_2023
-Warning--empty address in li2024sigir_llmnextpoi
+Warning--empty address in Li2024SIGIR_LLMNextPOI
 Warning--empty year in qi_rag-optimized_2025
 Warning--using date in qi_rag-optimized_2025
 Warning--empty address in Tsai2024FindingsACL_LLMReasoningRecSys
 Warning--empty address in noauthor_genup_nodate
 You've used 15 entries,
             6056 wiz_defined-function locations,
-            1627 strings with 22848 characters,
+            1626 strings with 22824 characters,
 and the built_in function-call counts, 19126 in all, are:
 = -- 2649
 > -- 697
@@ -62,4 +61,4 @@ warning$ -- 6
 while$ -- 92
 width$ -- 0
 write$ -- 344
-(There were 7 warnings)
+(There were 6 warnings)
