@@ -2,8 +2,8 @@ PWD c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
 INPUT C:\Users\bksai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25\main.tex
 OUTPUT main.log
-INPUT .\acmart.cls
-INPUT acmart.cls
+INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
+INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkeyval.tex
