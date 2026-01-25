@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{13}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -35,5 +35,198 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Feng et~al\mbox{.}(2023)]%
+        {Feng2023LLMCRS}
+\bibfield{author}{\bibinfo{person}{Yue Feng}, \bibinfo{person}{Shuchang Liu},
+  \bibinfo{person}{Zhenghai Xue}, \bibinfo{person}{Qingpeng Cai},
+  \bibinfo{person}{Lantao Hu}, \bibinfo{person}{Peng Jiang},
+  \bibinfo{person}{Kun Gai}, {and} \bibinfo{person}{Fei Sun}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{A Large Language Model Enhanced Conversational
+  Recommender System}.
+\newblock
+\href{https://doi.org/10.48550/arXiv.2308.06212}{doi:\nolinkurl{10.48550/arXiv.2308.06212}}
+\showeprint[arxiv]{2308.06212}
+
+
+\bibitem[Hofschen et~al\mbox{.}(2023)]%
+        {hofschen_expected_2023}
+\bibfield{author}{\bibinfo{person}{Katharina Hofschen}, \bibinfo{person}{David
+  Massimo}, {and} \bibinfo{person}{Francesco Ricci}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Expected and Experienced Utility of Points of
+  Interest in Tourism Recommender Systems}. In
+  \bibinfo{booktitle}{\emph{Adjunct Proceedings of the 31st {ACM} Conference on
+  User Modeling, Adaptation and Personalization}} (New York, {NY}, {USA},
+  2023-06-16) \emph{(\bibinfo{series}{{UMAP} '23 Adjunct})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{pages}{50--55}.
+\newblock
+\showISBNx{978-1-4503-9891-6}
+\href{https://doi.org/10.1145/3563359.3597405}{doi:\nolinkurl{10.1145/3563359.3597405}}
+
+
+\bibitem[Hsu et~al\mbox{.}(2024)]%
+        {hsu_fine-tuned_2024}
+\bibfield{author}{\bibinfo{person}{Cathy H.~C. Hsu}, \bibinfo{person}{Guoxiong
+  Tan}, {and} \bibinfo{person}{Bela Stantic}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{A fine-tuned tourism-specific generative {AI}
+  concept}.
+\newblock \bibinfo{journal}{\emph{Annals of Tourism Research}}
+  \bibinfo{volume}{104} (\bibinfo{year}{2024}), \bibinfo{pages}{103723}.
+\newblock
+\showISSN{0160-7383}
+\href{https://doi.org/10.1016/j.annals.2023.103723}{doi:\nolinkurl{10.1016/j.annals.2023.103723}}
+
+
+\bibitem[Li et~al\mbox{.}(2025)]%
+        {li_generative_2025}
+\bibfield{author}{\bibinfo{person}{Hengyun Li}, \bibinfo{person}{Jingbo Xi},
+  \bibinfo{person}{Cathy H.~C. Hsu}, \bibinfo{person}{Bruce X.~B. Yu}, {and}
+  \bibinfo{person}{Xiang~(Kevin) Zheng}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Generative artificial intelligence in tourism
+  management: An integrative review and roadmap for future research}.
+\newblock \bibinfo{journal}{\emph{Tourism Management}}  \bibinfo{volume}{110}
+  (\bibinfo{year}{2025}), \bibinfo{pages}{105179}.
+\newblock
+\showISSN{0261-5177}
+\href{https://doi.org/10.1016/j.tourman.2025.105179}{doi:\nolinkurl{10.1016/j.tourman.2025.105179}}
+
+
+\bibitem[Li et~al\mbox{.}(2024)]%
+        {Li2024SIGIR_LLMNextPOI}
+\bibfield{author}{\bibinfo{person}{Peibo Li}, \bibinfo{person}{Maarten de
+  Rijke}, \bibinfo{person}{Hao Xue}, \bibinfo{person}{Shuang Ao},
+  \bibinfo{person}{Yang Song}, {and} \bibinfo{person}{Flora~D. Salim}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Large Language Models for Next Point-of-Interest
+  Recommendation}. In \bibinfo{booktitle}{\emph{Proceedings of the 47th
+  International ACM SIGIR Conference on Research and Development in Information
+  Retrieval (SIGIR '24)}}. \bibinfo{publisher}{Association for Computing
+  Machinery}, \bibinfo{pages}{1463--1472}.
+\newblock
+\href{https://doi.org/10.1145/3626772.3657840}{doi:\nolinkurl{10.1145/3626772.3657840}}
+
+
+\bibitem[Renjith et~al\mbox{.}(2020)]%
+        {renjith_extensive_2020}
+\bibfield{author}{\bibinfo{person}{Shini Renjith}, \bibinfo{person}{A.
+  Sreekumar}, {and} \bibinfo{person}{M. Jathavedan}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{An extensive study on the evolution of
+  context-aware personalized travel recommender systems}.
+\newblock \bibinfo{journal}{\emph{Information Processing \& Management}}
+  \bibinfo{volume}{57}, \bibinfo{number}{1} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{102078}.
+\newblock
+\showISSN{0306-4573}
+\href{https://doi.org/10.1016/j.ipm.2019.102078}{doi:\nolinkurl{10.1016/j.ipm.2019.102078}}
+
+
+\bibitem[Tsai et~al\mbox{.}(2024)]%
+        {Tsai2024FindingsACL_LLMReasoningRecSys}
+\bibfield{author}{\bibinfo{person}{Alicia Tsai}, \bibinfo{person}{Adam Kraft},
+  \bibinfo{person}{Long Jin}, \bibinfo{person}{Chenwei Cai},
+  \bibinfo{person}{Anahita Hosseini}, \bibinfo{person}{Taibai Xu},
+  \bibinfo{person}{Zemin Zhang}, \bibinfo{person}{Lichan Hong},
+  \bibinfo{person}{Ed Chi}, {and} \bibinfo{person}{Xinyang Yi}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Leveraging {LLM} Reasoning Enhances Personalized
+  Recommender Systems}. In \bibinfo{booktitle}{\emph{Findings of the
+  Association for Computational Linguistics: ACL 2024}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{13176--13188}.
+\newblock
+\href{https://doi.org/10.18653/v1/2024.findings-acl.780}{doi:\nolinkurl{10.18653/v1/2024.findings-acl.780}}
+
+
+\bibitem[Wang and Wang(2024)]%
+        {wang_embracing_2024}
+\bibfield{author}{\bibinfo{person}{Tianxing Wang} {and} \bibinfo{person}{Can
+  Wang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Embracing {LLMs} for Point-of-Interest
+  Recommendations}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Intelligent Systems}}
+  \bibinfo{volume}{39}, \bibinfo{number}{1} (\bibinfo{year}{2024}),
+  \bibinfo{pages}{56--59}.
+\newblock
+\showISSN{1941-1294}
+\href{https://doi.org/10.1109/MIS.2023.3343489}{doi:\nolinkurl{10.1109/MIS.2023.3343489}}
+
+
+\bibitem[Wang and Wang(2025)]%
+        {wang_point--interest_2025}
+\bibfield{author}{\bibinfo{person}{Tianxing Wang} {and} \bibinfo{person}{Can
+  Wang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Point-of-Interest Recommendations and Large
+  Language Models: A Powerful Combination}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Intelligent Systems}}
+  \bibinfo{volume}{40}, \bibinfo{number}{3} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{5--9}.
+\newblock
+\showISSN{1941-1294}
+\href{https://doi.org/10.1109/MIS.2025.3561473}{doi:\nolinkurl{10.1109/MIS.2025.3561473}}
+
+
+\bibitem[Wang et~al\mbox{.}(2025)]%
+        {wang_survey_2025}
+\bibfield{author}{\bibinfo{person}{Zehui Wang}, \bibinfo{person}{Wolfram
+  Höpken}, {and} \bibinfo{person}{Dietmar Jannach}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{A survey on point-of-interest recommendations
+  leveraging heterogeneous data}.
+\newblock \bibinfo{journal}{\emph{Information Technology \& Tourism}}
+  \bibinfo{volume}{27}, \bibinfo{number}{1} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{29--73}.
+\newblock
+\showISSN{1943-4294}
+\href{https://doi.org/10.1007/s40558-024-00301-3}{doi:\nolinkurl{10.1007/s40558-024-00301-3}}
+
+
+\bibitem[Wongso et~al\mbox{.}(2025)]%
+        {noauthor_genup_nodate}
+\bibfield{author}{\bibinfo{person}{Wilson Wongso}, \bibinfo{person}{Hao Xue},
+  {and} \bibinfo{person}{Flora Salim}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{GenUP}: Generative User Profilers as In-Context
+  Learners for Next {POI} Recommender Systems}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 33rd {ACM} International
+  Conference on Advances in Geographic Information Systems}} (2025-12-12)
+  \emph{(\bibinfo{series}{{SIGSPATIAL} '25})}. \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{pages}{436--439}.
+\newblock
+\href{https://doi.org/10.1145/3748636.3762754}{doi:\nolinkurl{10.1145/3748636.3762754}}
+
+
+\bibitem[Zhang and Prebensen(2024)]%
+        {zhang_co-creating_2024}
+\bibfield{author}{\bibinfo{person}{Yaozhi Zhang} {and}
+  \bibinfo{person}{Nina~Katrine Prebensen}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Co-creating with {ChatGPT} for tourism marketing
+  materials}.
+\newblock \bibinfo{journal}{\emph{Annals of Tourism Research Empirical
+  Insights}} \bibinfo{volume}{5}, \bibinfo{number}{1} (\bibinfo{year}{2024}),
+  \bibinfo{pages}{100124}.
+\newblock
+\showISSN{2666-9579}
+\href{https://doi.org/10.1016/j.annale.2024.100124}{doi:\nolinkurl{10.1016/j.annale.2024.100124}}
+
+
+\bibitem[Zhao et~al\mbox{.}(2024)]%
+        {Zhao2024TKDE_LLMRecSysEra}
+\bibfield{author}{\bibinfo{person}{Zihuai Zhao}, \bibinfo{person}{Wenqi Fan},
+  \bibinfo{person}{Jiatong Li}, \bibinfo{person}{Yunqing Liu},
+  \bibinfo{person}{Xiaowei Mei}, \bibinfo{person}{Yiqi Wang},
+  \bibinfo{person}{Zhen Wen}, \bibinfo{person}{Fei Wang},
+  \bibinfo{person}{Xiangyu Zhao}, \bibinfo{person}{Jiliang Tang}, {and}
+  \bibinfo{person}{Qing Li}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Recommender Systems in the Era of Large Language
+  Models ({LLMs})}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} \bibinfo{volume}{36}, \bibinfo{number}{11}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{6889--6907}.
+\newblock
+\href{https://doi.org/10.1109/TKDE.2024.3392335}{doi:\nolinkurl{10.1109/TKDE.2024.3392335}}
+
 
 \end{thebibliography}
