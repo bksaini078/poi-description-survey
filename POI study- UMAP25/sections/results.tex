@@ -3,34 +3,20 @@ This section presents the findings from the user study evaluating LLM-adapted PO
 
 \begin{table}[h]
   \centering
-  \small % Fits better in a narrow column
-  \begin{tabular}{@{}llcc@{}}
+  \small
+  \begin{tabular}{@{}lcccccc@{}}
     \toprule
-    \textbf{Metric} & \textbf{Level (1--5)} & \textbf{Manual} & \textbf{AI} \\
+    & \multicolumn{2}{c}{\textbf{Significance}} & \multicolumn{2}{c}{\textbf{Trust}} & \multicolumn{2}{c}{\textbf{Clarity}} \\
+    \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+    \textbf{Level} & Man. & AI & Man. & AI & Man. & AI \\
     \midrule
-    \textbf{Significance} 
-    & 1 (Lowest) & 1.4 & 1.6 \\
-    & 2          & 4.1 & 4.7 \\
-    & 3          & 27.1 & 23.1 \\
-    & 4          & 55.1 & 54.1 \\
-    & 5 (Highest)& 12.3 & 16.5 \\
-    \midrule
-    \textbf{Trust} 
-    & 1 (Lowest) & 1.6 & 0.8 \\
-    & 2          & 8.4 & 6.5 \\
-    & 3          & 33.3 & 27.4 \\
-    & 4          & 46.1 & 51.2 \\
-    & 5 (Highest)& 10.6 & 14.1 \\
-    \midrule
-    \textbf{Clarity} 
-    & 1 (Lowest) & 0.6 & 1.0 \\
-    & 2          & 6.5 & 4.7 \\
-    & 3          & 28.8 & 21.4 \\
-    & 4          & 51.0 & 55.7 \\
-    & 5 (Highest)& 13.1 & 17.2 \\
+    1--2 (Low)  & 5.5  & 6.3  & 10.0 & 7.3  & 7.1  & 5.7 \\
+    3 (Neutral) & 27.1 & 23.1 & 33.3 & 27.4 & 28.8 & 21.4 \\
+    4--5 (High) & 67.4 & 70.6 & 56.7 & 65.3 & 64.1 & 72.9 \\
     \bottomrule
   \end{tabular}
-  \caption{Distribution of User Ratings \% for Manual vs. AI Descriptions ($N=510$)}
+  \vspace{0.9em}
+  \caption{Distribution of User Ratings (\%) for Manual vs.\ AI Descriptions ($N=510$)}
   \label{tab:metrics-summary}
 \end{table}
 

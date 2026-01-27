@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.26)  27 JAN 2026 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.26)  27 JAN 2026 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,12 +942,12 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 3.
  [2.2]
 
-Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 64.
+Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 50.
 
 <figures/significance_comparison.png, id=156, 786.83963pt x 424.76692pt>
 File: figures/significance_comparison.png Graphic file (type png)
 <use figures/significance_comparison.png>
-Package pdftex.def Info: figures/significance_comparison.png  used on input line 71.
+Package pdftex.def Info: figures/significance_comparison.png  used on input line 57.
 (pdftex.def)             Requested size: 204.97684pt x 110.65068pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -955,20 +955,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/trust_comparison.png, id=160, 786.83963pt x 424.76692pt>
 File: figures/trust_comparison.png Graphic file (type png)
 <use figures/trust_comparison.png>
-Package pdftex.def Info: figures/trust_comparison.png  used on input line 84.
+Package pdftex.def Info: figures/trust_comparison.png  used on input line 70.
 (pdftex.def)             Requested size: 204.97684pt x 110.65068pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/clarity_comparison.png, id=162, 786.83963pt x 424.76692pt>
+[3.3 <./figures/eval1.jpeg> <./figures/significance_comparison.png> <./figures/trust_comparison.png>]
+<figures/clarity_comparison.png, id=171, 786.83963pt x 424.76692pt>
 File: figures/clarity_comparison.png Graphic file (type png)
 <use figures/clarity_comparison.png>
-Package pdftex.def Info: figures/clarity_comparison.png  used on input line 97.
+Package pdftex.def Info: figures/clarity_comparison.png  used on input line 83.
 (pdftex.def)             Requested size: 204.97684pt x 110.65068pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3.3 <./figures/eval1.jpeg> <./figures/significance_comparison.png>]) (sections/discussion.tex) (sections/conclusion.tex) [4.4 <./figures/trust_comparison.png> <./figures/clarity_comparison.png>] Excluding 'acks' comment. (main.bbl)
+) (sections/discussion.tex) (sections/conclusion.tex) Excluding 'acks' comment. (main.bbl [4.4 <./figures/clarity_comparison.png>])
 
 Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 277.
 
@@ -987,13 +985,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  21362 strings out of 467871
  351780 string characters out of 5418375
- 853311 words of memory out of 5000000
+ 851471 words of memory out of 5000000
  49206 multiletter control sequences out of 15000+600000
  797163 words of font info for 403 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,16n,131p,1319b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,131p,1319b,798s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/LibertineMathMI.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/bksai/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (5 pages, 1961428 bytes).
+Output written on main.pdf (5 pages, 1961276 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
