@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{15}
+\begin{thebibliography}{13}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -47,20 +47,6 @@
   (\bibinfo{year}{2005}), \bibinfo{pages}{734--749}.
 \newblock
 \href{https://doi.org/10.1109/TKDE.2005.99}{doi:\nolinkurl{10.1109/TKDE.2005.99}}
-
-
-\bibitem[Feng et~al\mbox{.}(2023)]%
-        {Feng2023LLMCRS}
-\bibfield{author}{\bibinfo{person}{Yue Feng}, \bibinfo{person}{Shuchang Liu},
-  \bibinfo{person}{Zhenghai Xue}, \bibinfo{person}{Qingpeng Cai},
-  \bibinfo{person}{Lantao Hu}, \bibinfo{person}{Peng Jiang},
-  \bibinfo{person}{Kun Gai}, {and} \bibinfo{person}{Fei Sun}.}
-  \bibinfo{year}{2023}\natexlab{}.
-\newblock \bibinfo{title}{A Large Language Model Enhanced Conversational
-  Recommender System}.
-\newblock
-\href{https://doi.org/10.48550/arXiv.2308.06212}{doi:\nolinkurl{10.48550/arXiv.2308.06212}}
-\showeprint[arxiv]{2308.06212}
 
 
 \bibitem[Hofschen et~al\mbox{.}(2023)]%
@@ -148,23 +134,6 @@
 \newblock
 \showISSN{0306-4573}
 \href{https://doi.org/10.1016/j.ipm.2019.102078}{doi:\nolinkurl{10.1016/j.ipm.2019.102078}}
-
-
-\bibitem[Tsai et~al\mbox{.}(2024)]%
-        {Tsai2024FindingsACL_LLMReasoningRecSys}
-\bibfield{author}{\bibinfo{person}{Alicia Tsai}, \bibinfo{person}{Adam Kraft},
-  \bibinfo{person}{Long Jin}, \bibinfo{person}{Chenwei Cai},
-  \bibinfo{person}{Anahita Hosseini}, \bibinfo{person}{Taibai Xu},
-  \bibinfo{person}{Zemin Zhang}, \bibinfo{person}{Lichan Hong},
-  \bibinfo{person}{Ed Chi}, {and} \bibinfo{person}{Xinyang Yi}.}
-  \bibinfo{year}{2024}\natexlab{}.
-\newblock \showarticletitle{Leveraging {LLM} Reasoning Enhances Personalized
-  Recommender Systems}. In \bibinfo{booktitle}{\emph{Findings of the
-  Association for Computational Linguistics: ACL 2024}}.
-  \bibinfo{publisher}{Association for Computational Linguistics},
-  \bibinfo{pages}{13176--13188}.
-\newblock
-\href{https://doi.org/10.18653/v1/2024.findings-acl.780}{doi:\nolinkurl{10.18653/v1/2024.findings-acl.780}}
 
 
 \bibitem[Wang and Wang(2024)]%
