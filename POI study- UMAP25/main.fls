@@ -1,6 +1,6 @@
-PWD c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
+PWD C:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
 INPUT C:\Users\bksai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25\main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
@@ -426,11 +426,6 @@ INPUT .\figures\eval1.jpeg
 INPUT .\figures\eval1.jpeg
 INPUT .\figures\eval1.jpeg
 INPUT .\figures\eval1.jpeg
-INPUT .\sections\results.tex
-INPUT .\sections\results.tex
-INPUT .\sections\results.tex
-INPUT .\sections\results.tex
-INPUT sections\results.tex
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1.tfm
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1.tfm
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinBiolinumT-tlf-t1.vf
@@ -439,6 +434,11 @@ INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\Lin
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-t1.vf
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1--base.tfm
+INPUT .\sections\results.tex
+INPUT .\sections\results.tex
+INPUT .\sections\results.tex
+INPUT .\sections\results.tex
+INPUT sections\results.tex
 INPUT .\figures\significance_comparison.png
 INPUT .\figures\significance_comparison.png
 INPUT .\figures\significance_comparison.png

@@ -1,5 +1,7 @@
 \section{Results}
-This section presents the findings from the user study evaluating LLM-adapted POI descriptions against original manual descriptions. Participant responses are analyzed across three core metrics: significance, trustworthiness, and clarity, followed by comparative preference evaluations and overall feedback on the adaptive personalization concept. The study collected 510 paired observations (51 participants × 10 POIs) for each metric, enabling robust statistical analysis of user perceptions. Table~\ref{tab:metrics-summary} provides an overview of the rating distributions across all three evaluation dimensions.
+This section presents findings from the user study evaluating LLM-adapted POI descriptions against manual baselines. Responses are summarized across three core metrics: significance, trustworthiness, and clarity. Comparative preference results and overall feedback are then reported.
+
+Across 51 participants and 10 POIs, the study collected $N = 510$ ratings per condition for each metric (manual versus AI). Table~\ref{tab:metrics-summary} summarizes the distribution of ratings aggregated across all evaluations.
 
 \begin{table}[h]
   \centering
@@ -20,34 +22,7 @@ This section presents the findings from the user study evaluating LLM-adapted PO
   \label{tab:metrics-summary}
 \end{table}
 
-% \begin{table}[h]
-%   \caption{Summary of rating distributions for manual and AI-generated descriptions across three evaluation metrics (n=510 per condition)}
-%   \label{tab:metrics-summary}
-%   \begin{tabular}{llrr}
-%     \toprule
-%     \textbf{Metric} & \textbf{Rating} & \textbf{Manual} & \textbf{AI} \\
-%     \midrule
-%     Significance & Strongly Disagree & 7 & 8 \\
-%     & Disagree & 21 & 24 \\
-%     & Neutral & 138 & 118 \\
-%     & Agree & 281 & 276 \\
-%     & Strongly Agree & 63 & 84 \\
-%     \midrule
-%     Trustworthiness & Not at all & 8 & 4 \\
-%     & Slightly & 43 & 33 \\
-%     & Moderately & 170 & 140 \\
-%     & Very & 235 & 261 \\
-%     & Extremely & 54 & 72 \\
-%     \midrule
-%     Clarity & Very Unclear & 3 & 5 \\
-%     & Unclear & 33 & 24 \\
-%     & Neutral & 147 & 109 \\
-%     & Clear & 260 & 284 \\
-%     & Very Clear & 67 & 88 \\
-%     \bottomrule
-%   \end{tabular}
-% \end{table}
-\vspace{-0.9em}
+% Full count tables are available in the accompanying research report.
 
 \subsection{Perceived Significance}
 Participants rated both description versions on how effectively they communicated the significance and offerings of each POI using a 5-point Likert scale ranging from Strongly Disagree to Strongly Agree. Figure~\ref{fig:significance} illustrates the distribution of responses for manual and AI-generated descriptions.
@@ -60,7 +35,7 @@ Participants rated both description versions on how effectively they communicate
   \label{fig:significance}
 \end{figure}
 
-Both description types received predominantly positive ratings (see Table~\ref{tab:metrics-summary}). AI-generated descriptions showed a shift toward stronger endorsement, with a 4.2 percentage-point increase in top-box ratings (level 5) and reduced neutral responses. However, a chi-square test revealed no statistically significant difference ($\chi^2(4) = 4.87$, $p = 0.3005$), indicating AI adaptations maintained comparable perceived significance.
+Both description types received predominantly positive ratings (Table~\ref{tab:metrics-summary}). AI-generated descriptions shifted responses away from neutral toward stronger endorsement (e.g., Strongly Agree increased from 63 to 84 ratings). However, the pooled chi-square test did not indicate a statistically reliable difference in the overall distribution ($\chi^2(4) = 4.87$, $p = 0.3005$). The corresponding effect size was small (Cramer's $V = 0.069$, computed with $N=1020$ pooled observations), suggesting similar perceived significance between conditions.
 
 \subsection{Trustworthiness}
 Trustworthiness was assessed on a 5-point scale ranging from Not at all to Extremely. Figure~\ref{fig:trust} presents the comparative distribution of trust ratings.
@@ -73,7 +48,8 @@ Trustworthiness was assessed on a 5-point scale ranging from Not at all to Extre
   \label{fig:trust}
 \end{figure}
 
-AI-generated descriptions received higher trust ratings overall, with increased "Extremely" trustworthy responses (14.1\% vs. 10.6\%) and decreased low-trust ratings. This pattern reflects a shift from moderate trust toward higher categories. A chi-square test showed a borderline association ($\chi^2(4)=9.49$, $p=.050$).
+AI-generated descriptions received higher trust ratings overall, with fewer low-trust responses and more ratings in the highest category (Extremely: 72 vs.
+54). The pooled chi-square test provided borderline evidence of a distributional shift ($\chi^2(4) = 9.49$, $p = 0.050$). The effect size was small (Cramer's $V = 0.096$, computed with $N=1020$ pooled observations), indicating that the improvement is modest in magnitude and should be interpreted cautiously.
 
 \subsection{Clarity and Completeness}
 Participants evaluated how clear and complete the information was using a 5-point scale from Very Unclear to Very Clear. Figure~\ref{fig:clarity} shows the distribution of clarity ratings.
@@ -86,10 +62,14 @@ Participants evaluated how clear and complete the information was using a 5-poin
   \label{fig:clarity}
 \end{figure}
 
-AI-generated descriptions demonstrated superior clarity ratings, with increased "Clear" (55.7\% vs. 51.0\%) and "Very Clear" (17.2\% vs. 13.1\%) responses, and a substantial reduction in neutral responses (21.4\% vs. 28.8\%). A chi-square test confirmed statistical significance ($\chi^2(4) = 11.47$, $p = 0.0218$), providing evidence that personalized AI descriptions significantly enhanced perceived clarity.
+AI-generated descriptions were rated as clearer overall, with a notable reduction in neutral responses (109 vs.
+147) and more ratings in the top two categories (Clear or Very Clear: 372 vs.
+327). The pooled chi-square test indicated a statistically significant difference in the distribution ($\chi^2(4) = 11.47$, $p = 0.0218$). The effect size was small (Cramer's $V = 0.106$, computed with $N=1020$ pooled observations), consistent with a modest but systematic shift in perceived clarity.
 
 \subsection{Comparative Preferences}
-Beyond individual ratings, participants indicated which description version they found more engaging, relevant, and appealing. For the engaging preference, responses were nearly evenly split between AI-generated (221; 43.3\%) and manual (220; 43.1\%) descriptions, with 69 selections (13.5\%) indicating both versions were equally engaging. This near-parity suggests that AI personalization matched the engagement level of carefully crafted manual descriptions while adding the benefit of customization.
+Beyond individual ratings, participants completed several comparative preference questions. Due to space constraints, this short paper reports the engaging comparison. Responses were nearly evenly split between AI-generated (221; 43.3\%) and manual (220; 43.1\%) descriptions, with 69 selections (13.5\%) indicating both versions were equally engaging. This near-parity suggests that personalization increased perceived clarity without reducing engagement.
 
 \subsection{Overall Study Feedback}
 Following the POI evaluations, participants were invited to provide optional overall feedback. A subset of 17 participants completed this section, rating three dimensions using a 5-point scale (1 = Poor, 5 = Excellent). The overall experience with POI descriptions received a mean rating of 3.88 (SD = 0.70, Median = 4.0), indicating generally positive reception. Participants expressed moderate to strong support for the concept of automatically adapting POI descriptions based on user interests, with a mean rating of 3.75 (SD = 0.93, Median = 4.0). Comfort with reading AI-generated descriptions when planning visits to new places received the highest mean rating of 3.94 (SD = 0.83, Median = 4.0), suggesting participants were receptive to AI-generated travel content when it demonstrated quality and relevance. The relatively low standard deviations (all below 1.0) indicate consensus among participants without extreme polarization of opinions.
+
+Across metrics, AI adaptation primarily reduced neutral ratings and increased positive categories. Given the repeated-measures structure of the data, pooled tests summarize distributional shifts.
