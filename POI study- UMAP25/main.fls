@@ -1,6 +1,6 @@
-PWD C:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
+PWD c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25
 INPUT C:\Users\bksai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Users\bksai\Documents\projects\github\PoI_survey\POI study- UMAP25\main.tex
 OUTPUT main.log
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\tex\latex\acmart\acmart.cls
@@ -419,13 +419,13 @@ INPUT .\sections\methodology.tex
 INPUT sections\methodology.tex
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-t1.tfm
-INPUT .\figures\eval1.jpeg
-INPUT .\figures\eval1.jpeg
-INPUT .\figures\eval1.jpeg
-INPUT .\figures\eval1.jpeg
-INPUT .\figures\eval1.jpeg
-INPUT .\figures\eval1.jpeg
-INPUT .\figures\eval1.jpeg
+INPUT .\figures\PoI_survey_img.png
+INPUT .\figures\PoI_survey_img.png
+INPUT .\figures\PoI_survey_img.png
+INPUT .\figures\PoI_survey_img.png
+INPUT .\figures\PoI_survey_img.png
+INPUT .\figures\PoI_survey_img.png
+INPUT .\figures\PoI_survey_img.png
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1.tfm
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinBiolinumT-tlf-t1.tfm
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinBiolinumT-tlf-t1.vf
@@ -439,29 +439,13 @@ INPUT .\sections\results.tex
 INPUT .\sections\results.tex
 INPUT .\sections\results.tex
 INPUT sections\results.tex
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\significance_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT .\figures\trust_comparison.png
-INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\vf\public\libertine\LinLibertineT-tlf-ot1.vf
-INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\libertine\LinLibertineT-tlf-ot1--base.tfm
-INPUT .\figures\clarity_comparison.png
-INPUT .\figures\clarity_comparison.png
-INPUT .\figures\clarity_comparison.png
-INPUT .\figures\clarity_comparison.png
-INPUT .\figures\clarity_comparison.png
-INPUT .\figures\clarity_comparison.png
-INPUT .\figures\clarity_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
+INPUT .\figures\mean_ratings_comparison.png
 INPUT .\sections\discussion.tex
 INPUT .\sections\discussion.tex
 INPUT .\sections\discussion.tex
@@ -496,6 +480,8 @@ INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTB.pfb
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\libertine\LinLibertineTI.pfb
+INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI.pfb
+INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txmiaX.pfb
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txmiaX.pfb
 INPUT C:\Users\bksai\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txsys.pfb

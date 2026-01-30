@@ -1,6 +1,6 @@
 # Environment variables
 .env
-
+nul
 # Python
 __pycache__/
 *.py[cod]

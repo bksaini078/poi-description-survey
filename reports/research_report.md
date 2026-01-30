@@ -66,6 +66,9 @@ Final reflections were collected from 28 respondents (some items contain fewer n
 | Support for adaptive descriptions    | 3.75 | 0.93 |   4.0  |16 |
 | Comfort with AI-generated POI text   | 3.94 | 0.83 |   4.0  |17 |
 
+
+
+
 **Takeaways:** Respondents lean positive ($\mu \approx 4$) on overall satisfaction and AI comfort, and moderately endorse ($\mu=3.75$) the idea of tailoring POI narratives to their interests. Score spreads under 1 point suggest consensus without extreme polarization.
 
 ## Key Implications
@@ -75,3 +78,17 @@ Final reflections were collected from 28 respondents (some items contain fewer n
 4. **End-user feedback validates personalization concepts**: participants are receptive to adaptive, AI-assisted storytelling so long as clarity and trust gains persist.
 
 These findings can seed the Results and Discussion sections of the research paper, with notebook cells 1–28 providing reproducible provenance for every statistic cited above.
+
+## Paired Comparisons: Manual vs AI (Mean-Level Tests)
+Per-metric paired tests (same respondent rated both versions; Likert mapped 1–5). Wilcoxon is the primary inference because the data are ordinal; paired t-test is reported as a robustness check under an interval/normality assumption.
+
+| Metric | n_pairs | Manual mean | AI mean | Paired t (p) | Wilcoxon (p) |
+|--------|--------:|------------:|--------:|-------------:|--------------:|
+| Significance | 510 | 3.7294 | 3.7922 | 0.1542 | 0.1307 |
+| Trust | 510 | 3.5569 | 3.7137 | 0.0007 | 0.0005 |
+| Clarity | 510 | 3.6961 | 3.8353 | 0.0018 | 0.0020 |
+
+Interpretation:
+- Trust and Clarity show statistically significant AI > Manual differences (Wilcoxon p < 0.01); Significance does not (p = 0.13).
+- Effect direction: AI means exceed Manual in all three metrics; gains are most pronounced for Trust and Clarity.
+- Use Wilcoxon for reporting (ordinal-appropriate); cite paired t-test as a sensitivity check if treating Likert as interval is acceptable.
