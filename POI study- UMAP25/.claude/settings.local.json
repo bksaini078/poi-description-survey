@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(pdflatex:*)",
-      "Bash(uv run python:*)",
-      "Bash(powershell -Command \"Get-Content sections\\\\*.tex, main.tex | Select-String -Pattern ''\\\\cite\\\\{'' -Context 0,0\")"
-    ]
-  }
-}
