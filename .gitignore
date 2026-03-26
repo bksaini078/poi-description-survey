@@ -43,3 +43,12 @@ temp_data/
 # OS specific
 .DS_Store
 Thumbs.db
+data/
+data_analysis
+reports
+instructions.md
+*.pdf
+POI Study-UMAP25
+.env
+rebuttal.md
+reviewer_comment
