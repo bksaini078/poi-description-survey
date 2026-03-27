@@ -81,35 +81,47 @@ class AIService:
         max_description_length = len(poi_data['description'])
         max_title_length = len(poi_data['title'])
         
-        system_prompt = f"""You are an expert travel writer and content creator. Your task is to create engaging, 
-        informative titles and descriptions for Points of Interest (POIs) that capture attention and provide value to potential visitors.
-        Focus on unique aspects, cultural significance, and visitor experience. Consider the visitor's family situation and adapt the content
-        to highlight relevant aspects (e.g., family-friendly features, romantic spots for couples, etc.).
+        system_prompt = f"""You are an expert travel guidebook editor. Rewrite Point of Interest descriptions so they read like 
+        polished entries in a printed travel guide or tourism brochure.
+        
+        CRITICAL STYLE RULES — follow these exactly:
+        - Write in third-person, objective, editorial voice (e.g., "Visitors can explore…", "The castle offers…", "A scenic walk leads to…").
+        - NEVER use second-person pronouns (you, your, yourself). NEVER address the reader directly.
+        - Do NOT use promotional or marketing language like "Don't miss", "Be sure to", or "You'll love".
+        - Match the tone, sentence structure, and vocabulary level of the original description provided.
+        - Subtly emphasize aspects relevant to the visitor profile (e.g., if they have children, weave in family-friendly details naturally; if they enjoy history, highlight historical significance) — but do so without revealing that the text was tailored.
+        - The rewritten text must be indistinguishable in style from the original human-written description.
         
         IMPORTANT LENGTH CONSTRAINTS:
         - The description MUST NOT exceed {max_description_length} characters
         - The title MUST NOT exceed {max_title_length} characters
         - Be concise while maintaining informativeness"""
         
-        prompt = f"""Create a title and description for this Point of Interest, personalized for the following user:
-        User Age: {user_data.get('age', 'Not specified')}
-        User Gender: {user_data.get('gender', 'Not specified')}
-        Marital Status: {user_data.get('marital_status', 'Not specified')}
-        Have Children: {user_data.get('has_children', 'Not specified')}
-        User Interests: {user_data.get('interests', 'Not specified')}
-        User Travel Experience: {user_data.get('travel_experience', 'Not specified')}
-        Education Level: {user_data.get('education', 'Not specified')}
-        Profession: {user_data.get('profession', 'Not specified')}
-        Hobbies: {user_data.get('hobbies', 'Not specified')}
-        Preferred Travel Style: {user_data.get('preferred_travel_style', 'Not specified')}
+        prompt = f"""Rewrite the title and description for this Point of Interest.
+        Use the visitor profile below ONLY to decide which aspects of the POI to emphasize — 
+        do NOT address the visitor directly or use second-person language.
+        
+        Visitor Profile (for emphasis guidance only):
+        - Age: {user_data.get('age', 'Not specified')}
+        - Gender: {user_data.get('gender', 'Not specified')}
+        - Marital Status: {user_data.get('marital_status', 'Not specified')}
+        - Has Children: {user_data.get('has_children', 'Not specified')}
+        - Interests: {user_data.get('interests', 'Not specified')}
+        - Travel Experience: {user_data.get('travel_experience', 'Not specified')}
+        - Education: {user_data.get('education', 'Not specified')}
+        - Profession: {user_data.get('profession', 'Not specified')}
+        - Hobbies: {user_data.get('hobbies', 'Not specified')}
+        - Preferred Travel Style: {user_data.get('preferred_travel_style', 'Not specified')}
 
         Point of Interest:
         Original Title: {poi_data['title']}
         Original Description: {poi_data['description']}
         
-        STRICT LENGTH REQUIREMENTS:
-        - Your description MUST be {max_description_length} characters or less
-        - Your title MUST be {max_title_length} characters or less"""
+        STRICT REQUIREMENTS:
+        - The description MUST be {max_description_length} characters or less
+        - The title MUST be {max_title_length} characters or less
+        - Write in the same third-person, guidebook style as the original description
+        - Do NOT use "you", "your", or any second-person pronouns"""
         
         try:
             completion = client.beta.chat.completions.parse(
