@@ -4,14 +4,14 @@ A web-based survey instrument for evaluating the effectiveness of AI-personalize
 
 ## Research Context
 
-The study employs a within-subjects experimental design where participants evaluate 10 POIs across 5 tourism categories (Accommodation, Natural Attractions, Entertainment, Cultural & Historical Sites, and Commercial & Shopping). For each POI, the system generates a personalized description using Azure OpenAI GPT-4o, subtly tailored to the participant's demographic profile and travel preferences. Participants then perform a blinded A/B comparison — the presentation order of original vs. AI-generated descriptions is randomized — and rate each version on multiple assessment dimensions.
+The study employs a within-subjects experimental design where participants evaluate 10 POIs across 5 tourism categories (Accommodation, Natural Attractions, Entertainment, Cultural & Historical Sites, and Commercial & Shopping). For each POI, the system generates a personalized description using Azure OpenAI GPT-4o, subtly tailored to the participant's demographic profile and travel preferences. Participants then perform a blinded A/B comparison - the presentation order of original vs. AI-generated descriptions is randomized - and rate each version on multiple assessment dimensions.
 
 ## Survey Flow
 
-1. **Consent** — Informed consent with study purpose and data handling information.
-2. **User Profiling** — Collection of demographics (age, gender, nationality, profession, etc.) and travel preferences (interests, hobbies, travel style, experience level).
-3. **POI Comparison** (×10) — Side-by-side blinded comparison of original and AI-generated title + description for each POI, with per-version ratings (significance, trust, clarity).
-4. **Final Survey** — Overall experience rating, perception of automated adaptation, comfort with AI-generated content, and open-ended feedback.
+1. **Consent** - Informed consent with study purpose and data handling information.
+2. **User Profiling** - Collection of demographics (age, gender, nationality, profession, etc.) and travel preferences (interests, hobbies, travel style, experience level).
+3. **POI Comparison** (×10) - Side-by-side blinded comparison of original and AI-generated title + description for each POI, with per-version ratings (significance, trust, clarity).
+4. **Final Survey** - Overall experience rating, perception of automated adaptation, comfort with AI-generated content, and open-ended feedback.
 
 ## Technical Stack
 
@@ -21,7 +21,7 @@ The study employs a within-subjects experimental design where participants evalu
 | AI Content Generation | Azure OpenAI (GPT-4o, `2024-08-06`)                      |
 | Data Models           | Pydantic v2                                              |
 | Data Storage          | CSV (survey responses), JSON (POI data, temp AI content) |
-| Language              | Python ≥ 3.13                                            |
+| Language              | Python ≥ 3.11                                            |
 | Package Manager       | uv (or pip)                                              |
 
 ## Project Structure
@@ -118,28 +118,28 @@ PoI_survey/
 
 Defines Pydantic v2 data models used across the application:
 
-- **`POIResponse`** — Structured output format for Azure OpenAI (title + description).
-- **`UserData`** — Participant demographic and preference profile.
-- **`SurveyResponse`** — Per-POI comparison response with all rating fields.
-- **`FinalSurveyResponse`** — End-of-survey feedback and optional lottery email.
-- **`POIData`** / **`POICategory`** — Schema for the POI dataset.
+- **`POIResponse`** - Structured output format for Azure OpenAI (title + description).
+- **`UserData`** - Participant demographic and preference profile.
+- **`SurveyResponse`** - Per-POI comparison response with all rating fields.
+- **`FinalSurveyResponse`** - End-of-survey feedback and optional lottery email.
+- **`POIData`** / **`POICategory`** - Schema for the POI dataset.
 
 ### `app/routes/survey_routes.py`
 
 Implements all Streamlit UI pages:
 
-- **`show_consent_page()`** — Renders informed consent text and captures agreement.
-- **`show_user_details_form()`** — Multi-column form collecting demographics, accessibility needs, profession, hobbies, travel interests/style/experience. Enforces minimum-selection validation.
-- **`show_poi_comparison()`** — Displays two randomized versions (A/B) side-by-side with images, titles, and descriptions. Renders per-version assessment scales and comparative preference questions.
-- **`show_thank_you()`** — Final survey page with overall experience, adaptation perception, AI comfort ratings, and optional lottery email entry.
+- **`show_consent_page()`** - Renders informed consent text and captures agreement.
+- **`show_user_details_form()`** - Multi-column form collecting demographics, accessibility needs, profession, hobbies, travel interests/style/experience. Enforces minimum-selection validation.
+- **`show_poi_comparison()`** - Displays two randomized versions (A/B) side-by-side with images, titles, and descriptions. Renders per-version assessment scales and comparative preference questions.
+- **`show_thank_you()`** - Final survey page with overall experience, adaptation perception, AI comfort ratings, and optional lottery email entry.
 
 ### `app/services/survey_service.py`
 
 Contains business logic organized into three service classes:
 
-- **`POIService`** — Loads `data/pois.json`, flattens category-grouped POIs into a single list.
-- **`AIService`** — Initializes Azure OpenAI client via Streamlit secrets, constructs system + user prompts incorporating visitor profile for emphasis guidance, enforces character-length constraints matching original descriptions, uses GPT-4o structured output parsing.
-- **`SurveyResponseService`** — Persists per-POI and final survey responses to timestamped CSV files in `survey_results/`.
+- **`POIService`** - Loads `data/pois.json`, flattens category-grouped POIs into a single list.
+- **`AIService`** - Initializes Azure OpenAI client via Streamlit secrets, constructs system + user prompts incorporating visitor profile for emphasis guidance, enforces character-length constraints matching original descriptions, uses GPT-4o structured output parsing.
+- **`SurveyResponseService`** - Persists per-POI and final survey responses to timestamped CSV files in `survey_results/`.
 
 ### `app/utils/helpers.py`
 
@@ -252,4 +252,4 @@ If you use this tool or dataset in your research, please cite:
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
