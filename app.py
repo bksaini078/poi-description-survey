@@ -11,8 +11,7 @@ import streamlit as st
 from app.utils.helpers import (
     set_page_config,
     add_custom_css,
-    initialize_session_state,
-    add_imprint_link
+    initialize_session_state
 )
 from app.routes.survey_routes import (
     show_consent_page,
@@ -39,12 +38,6 @@ def main():
     add_custom_css()
     initialize_session_state()
     
-    # Display Fraunhofer logo
-    st.image("logo/fraunhofer_logo.png", width=200)
-    
-    # Add imprint link
-    add_imprint_link()
-
     # Handle different pages based on session state
     if st.session_state.page == -2:
         if show_consent_page():

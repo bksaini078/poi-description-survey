@@ -29,8 +29,7 @@ def show_consent_page() -> bool:
 
     The goal of this study is to see how well descriptions of tourist spots, called Points of Interest (POIs), 
     can be customized to match people's preferences and interests. Your feedback will help us understand which 
-    methods work best for creating engaging and personalized descriptions. This study is being carried out in 
-    partnership with Fraunhofer IAO, Stuttgart, and KU Leuven, Belgium.
+    methods work best for creating engaging and personalized descriptions.
 
     ### What you will do:
 

@@ -69,14 +69,4 @@ def initialize_session_state() -> None:
     if 'consent_given' not in st.session_state:
         st.session_state.consent_given = False
 
-def add_imprint_link() -> None:
-    """Add imprint link to the top right of the page."""
-    col1, col2 = st.columns([0.9, 0.1])
-    with col2:
-        st.markdown(
-            '<div style="text-align: right;">'
-            '<a href="https://www.iao.fraunhofer.de/de/impressum.html" '
-            'target="_blank" style="color: #189c7d; text-decoration: none;">'
-            'Imprint</a></div>',
-            unsafe_allow_html=True
-        )
+

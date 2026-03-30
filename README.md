@@ -1,6 +1,6 @@
 # POI Survey Application
 
-A web-based survey instrument for evaluating the effectiveness of AI-personalized Point of Interest (POI) descriptions compared to original human-written descriptions. This application was developed as part of a collaborative research study between **Fraunhofer IAO, Stuttgart** and **KU Leuven, Belgium**, investigating whether LLM-generated, user-profile-adapted tourism descriptions can match or exceed the quality of manually authored content in terms of trust, clarity, engagement, and visit motivation.
+A web-based survey instrument for evaluating the effectiveness of AI-personalized Point of Interest (POI) descriptions compared to original human-written descriptions. This application was developed to investigate whether LLM-generated, user-profile-adapted tourism descriptions can match or exceed the quality of manually authored content in terms of trust, clarity, engagement, and visit motivation.
 
 ## Research Context
 
@@ -86,8 +86,6 @@ PoI_survey/
 │   └── scroll.html                     # JavaScript snippet for auto-scrolling to page top
 │
 ├── logo/
-│   ├── fraunhofer_logo.png             # Fraunhofer IAO logo displayed in the app header
-│   ├── fraunhofer_logo.svg
 │   ├── icon.ico                        # Browser tab favicon
 │   └── icon.svg
 │
@@ -143,7 +141,7 @@ Contains business logic organized into three service classes:
 
 ### `app/utils/helpers.py`
 
-Utility functions: Streamlit page configuration, custom CSS injection from `config/constants.py`, session state initialization (page tracking, user data, AI content cache, UUID-based user ID), image-to-base64 encoding for inline display, and Fraunhofer imprint link rendering.
+Utility functions: Streamlit page configuration, custom CSS injection from `config/constants.py`, session state initialization (page tracking, user data, AI content cache, UUID-based user ID), and image-to-base64 encoding for inline display.
 
 ### `config/constants.py`
 
@@ -241,14 +239,7 @@ Temporary AI-generated content is cached per user session in `temp_data/temp_poi
 
 If you use this tool or dataset in your research, please cite:
 
-```
-@misc{poi_survey_2026,
-  title={POI Survey: A Tool for Evaluating AI-Personalized Point of Interest Descriptions},
-  author={Fraunhofer IAO and KU Leuven},
-  year={2026},
-  url={https://github.com/bksaini078/PoI_survey}
-}
-```
+
 
 ## License
 
